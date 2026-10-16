@@ -1,0 +1,43 @@
+{
+  "validUser": {
+    "username": "student",
+    "password": "Password123"
+  },
+  "invalidLogins": [
+    {
+      "id": "TC06",
+      "scenario": "Verify error message for invalid username",
+      "username": "incorrectUser",
+      "password": "Password123",
+      "expectedError": "Your username is invalid!"
+    },
+    {
+      "id": "TC07",
+      "scenario": "Verify error message for invalid password",
+      "username": "student",
+      "password": "incorrectPassword",
+      "expectedError": "Your password is invalid!"
+    },
+    {
+      "id": "TC08",
+      "scenario": "Verify error message when username and password are empty",
+      "username": "",
+      "password": "",
+      "expectedError": "Your username is invalid!"
+    },
+    {
+      "id": "TC09",
+      "scenario": "Verify error message when password is empty",
+      "username": "student",
+      "password": "",
+      "expectedError": "Your password is invalid!"
+    },
+    {
+      "id": "TC10",
+      "scenario": "Verify password is case sensitive",
+      "username": "student",
+      "password": "password123",
+      "expectedError": "Your password is invalid!"
+    }
+  ]
+}
